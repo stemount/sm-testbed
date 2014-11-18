@@ -1,4 +1,0 @@
-stemount-website
-================
-
-My website
