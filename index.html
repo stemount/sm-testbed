@@ -8,203 +8,275 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <title>Stephen Mount - Freelance JavaScript Developer, London UK</title>
+  <title>Stephen Mount</title>
 
-  <meta name="description" content="@stemount is a web developer based in London." />
+  <meta name="description" content="@stemount is a web developer in Lannnndannnn." />
   <meta name="google-site-verification" content="NaFgPSlAwleU4sZLZGA98Kh6PakLTGSl8j61dQnmedQ" />
 
   <!-- force pesky users to not be able to scroll -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <style type="text/css">
+    @import url(http://fonts.googleapis.com/css?family=Oxygen:400,700,300);
+
     body {
       background: #222;
       margin: 40px;
       color: #FFF;
     }
 
-   html {
-     font-family: "HelveticaNeue-Light", "Helvetica", Arial, sans-serif;
-   }
+    html {
+      font-family: "Oxygen", "Helvetica", Arial, sans-serif;
+    }
 
-   .me img.photo {
-      width: 150px;
-      float: left;
-      margin: 0 20px 20px 0;
-   }
-
-   h1,h2,h3,h4,h5,h6 {
-     font-weight: normal;
-     margin: 0 0 10px 0;
-     padding: 0;
-   }
-
-   h1 {
-     color: #0099FF;
-   }
-
-   h2 {
-     color: #EEE;
-     margin: 0 0 20px 0;
-   }
-
-   p {
-     margin: 0 0 20px 0;
-     padding: 0;
-   }
-
-   a:link,
-   a:visited {
-     color: #0099FF;
-     font-weight: bold;
-     text-decoration: none;
-   }
-
-   a:hover {
-     text-decoration: underline;
-   }
-
-   .external_links {
-     font-size: 0.8em;
-     text-transform: uppercase;
-     margin: 0 0 20px 0;
-   }
-
-   .external_links a:link {
-     margin: 0 20px 0 0;
-   }
-
-  .projects a:after {
-    content: ',';
-    color: white;
-  }
-  .projects a:last-of-type:after {
-    content: '';
-  }
-
-   ul.tags {
-     margin: 0;
-     padding: 0;
-     clear: left;
-   }
-
-   ul.tags,
-   ul.tags li {
-     list-style-type: none;
-   }
-
-   ul.tags li {
-     display: inline-block;
-     margin: 0 10px 10px 0;
-     background: #444;
-     padding: 5px 10px;
-     border-radius: 5px;
-     font-size: 0.8em;
-     font-weight: bold;
-     text-transform: uppercase;
-   }
-
-   h2 a:link {
-     font-weight: normal;
-   }
-
-   @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+    .content {
+      line-height: 26px;
+    }
 
     .me img.photo {
-      float: none;
-      width: 100%;
-      margin-top: -50%;
+      border-radius: 100px;
+      width: 100px;
+      float: left;
+      margin: 0 20px 20px 0;
     }
 
-    .me {
-      height: 150px;
-      overflow: hidden;
-      margin: 40px 0 40px 0;
+    .me img.header_photo {
+      display: none;
     }
 
-    a:link {
+    h1,h2,h3,h4,h5,h6 {
       font-weight: normal;
+      margin: 0 0 10px 0;
+      padding: 0;
     }
 
-    .external_links {
-      margin: 20px 0;
+    h1 {
+      font-weight: bold;
+      color: #0099FF;
+    }
+
+    h2 {
+      color: #EEE;
+      margin: 0 0 20px 0;
     }
 
     p {
       margin: 0 0 20px 0;
+      padding: 0;
     }
 
-    ul.tags li {
+    a:link,
+    a:visited {
+      color: #0088EE;
       font-weight: normal;
+      text-decoration: none;
+      /*border-bottom: 1px solid #AAA;*/
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .external_links {
+      font-size: 0.8em;
+      text-transform: uppercase;
+      margin: 0 0 25px 0;
     }
 
     .external_links a {
-      display: block;
+      margin: 0 20px 0 0;
+      color: #AAA;
     }
 
-    .projects a:first-of-type {
-      margin: 20px 0 0 0;
+    .projects {
+      clear: left;
+      -webkit-column-count: 3; /* Chrome, Safari, Opera */
+      -moz-column-count: 3; /* Firefox */
+      column-count: 3;
     }
 
     .projects a {
       display: block;
     }
 
-    .projects a:after {
-      content: '';
+    ul.tags {
+      margin: 0;
+      padding: 0;
+      clear: left;
     }
 
-   }
+    ul.tags,
+    ul.tags li {
+      list-style-type: none;
+      color: #FFF;
+    }
 
-   @media only screen and (max-device-width: 640px), only screen and (max-device-width: 480px) {
-     body {
-       /*font-size: 3em;*/
-     }
-   }
+    ul.tags li {
+      display: inline-block;
+      margin: 0 5px 10px 0;
+      background: #444;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
 
-  .availability {
-    display: inline-block;
-    float: right;
-    padding: 10px;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 5px;
-  }
-  .available {
-    background: green;
-  }
-  .incontract {
-    background: #FF0000;
-  }
+    h2 a:link {
+      font-weight: normal;
+    }
+
+    #page {
+      width: 600px;
+    }
+
+    .availability {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+
+      padding: 10px;
+      line-height: 16px;
+      font-size: 12px;
+      font-weight: 700;
+
+      color: #FFF;
+    }
+
+    .available {
+      background: green;
+    }
+
+    .incontract {
+      background: #FF0000;
+    }
+
+    @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+
+      body {
+        margin: 70px 40px 40px 40px;
+      }
+
+      #page {
+        width: auto;
+      }
+
+      .me img.photo {
+        display: none;
+        float: none;
+        width: 100%;
+        /*margin-left*/
+        /*margin-top: -10px;*/
+      }
+
+      .me img.header_photo {
+        display: block;
+      }
+
+      .me {
+        height: 150px;
+        overflow: hidden;
+        margin: 40px -40px 40px -40px;
+        background-image: url("./smheaderpicture.jpg");
+        background-size: cover;
+      }
+
+      a:link {
+        font-weight: normal;
+      }
+
+      .external_links {
+        margin: 20px 0;
+      }
+
+      p {
+        margin: 0 0 20px 0;
+      }
+
+      ul.tags li {
+        font-weight: normal;
+      }
+
+      .external_links a {
+        display: block;
+      }
+
+      .projects {
+        clear: left;
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+      }
+
+      .projects a:first-of-type {
+        margin: 20px 0 0 0;
+      }
+
+      .availability {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+
+        padding: 10px;
+        line-height: 16px;
+        font-size: 12px;
+        font-weight: 700;
+
+        color: #FFF;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
+<div id="page">
+
   <!-- work stuff -->
-  <!-- <p class="availability incontract">Unavailable.</p> -->
+  <p class="availability available">Available from April</p>
 
-  <!-- who am I? -->
-  <h1>Hello, I'm Stephen&hellip;</h1>
-  <h2>I'm a freelance web developer based in Central London</h2>
+  <header>
+    <!-- who am I? -->
+    <h1>Hello, I'm Stephen&hellip;</h1>
+    <h2>I'm a web developer based in Central London</h2>
+  </header>
 
-  <!-- I'm 170cm which is particularly noticeable in this photo -->
-  <div class="me"><img src="./sm.jpg" alt="Stephen Mount" title="Stephen Mount with huge Druplicon" class="photo" /></div>
+  <!-- I'm 170cm so let's hide in a car! -->
+  <div class="me">
+    <img src="./sm2014.jpg" alt="Picture of Stephen Mount" title="Stephen Mount" class="photo" />
+  </div>
 
-  <p>Over the past 5+ years I've worked on number of sites of all sizes from brochure sites to high profile/enterprise/UK gov applications. I have experience of working on web applications that handle sensitive data and high traffic on MVC/MVVM architectures.</p>
+  <section class="content">
 
-  <!-- Projects -->
-  <p class="projects">In the past I have worked with <a href="http://universalchannel.co.uk" target="_blank">Universal Channel</a> <a href="http://huntress.co.uk" target="_blank">Huntress Group</a> <a href="http://eurostar.com" target="_blank">Eurostar.com</a> <a href="http://cqc.org.uk" target="_blank">Care Quality Commission</a> <a href="http://sportrelief.com" target="_blank">Sport Relief</a> <a href="http://practicalcaravan.com" target="_blank">Practical Caravan</a> <a href="http://naace.co.uk">Naace</a> <a href="http://rackspace.co.uk">Rackspace</a> <a href="http://viviennewestwood.com">Vivienne Westwood</a> <a href="http://bbcgoodfood.com">BBC Good Food</a> <a href="http://topgear.com">TopGear</a></p>
+    <p>Over the past 5+ years I've worked on number of sites of all sizes from brochure sites to high profile/enterprise/UK gov applications. I have experience of working on web applications that handle sensitive data and high traffic on MVC/MVVM architectures.</p>
 
-  <p>To discuss your projects, simply contact me below.</p>
+    <!-- Projects -->
+    <p class="projects">I've worked with&hellip;
+      <a href="http://universalchannel.co.uk" target="_blank">Universal Channel</a>
+      <a href="http://huntress.co.uk" target="_blank">Huntress Group</a>
+      <a href="http://eurostar.com" target="_blank">Eurostar.com</a>
+      <a href="http://cqc.org.uk" target="_blank">Care Quality Commission</a>
+      <a href="http://sportrelief.com" target="_blank">Comic/Sport Relief</a>
+      <a href="http://practicalcaravan.com" target="_blank">Practical Caravan</a>
+      <a href="http://naace.co.uk">Naace</a> <a href="http://rackspace.co.uk">Rackspace</a>
+      <a href="http://viviennewestwood.com">Vivienne Westwood</a>
+      <a href="http://bbcgoodfood.com">BBC Good Food</a>
+      <a href="http://topgear.com">BBC TopGear</a>
+    </p>
 
-  <!-- Links -->
-  <p class="external_links">
-    <a href="mailto:stemount@gmail.com" class="SteMail">stemount@gmail.com</a>
-    <a href="http://linkedin.com/stemount" target="_blank">LinkedIn</a>
-    <a href="http://twitter.com/stemount" target="_blank">@stemount</a>
-    <a href="https://www.yunojuno.com/p/stemount" target="_blank">YunoJuno Profile</a>
-  </p>
+    <!-- Links -->
+    <p class="external_links">
+      <a href="mailto:stemount@gmail.com" class="SteMail">stemount@gmail.com</a>
+      <a href="http://linkedin.com/in/stemount" target="_blank">LinkedIn</a>
+      <a href="http://twitter.com/stemount" target="_blank">@stemount</a>
+    </p>
+
+  </section>
 
   <footer>
     <!-- Things I use and like -->
@@ -235,6 +307,8 @@
     ga('send', 'pageview');
 
   </script>
+
+</div>
 
 </body>
 </html>
