@@ -208,6 +208,34 @@
 
     }
 
+    section.yrs {
+      margin: 0 0 30px 0;
+    }
+
+    section.yrs img {
+      width: 100%;
+      float: left;
+      margin: 0 20px 0 0;
+    }
+
+    .cf:before,
+    .cf:after {
+        content: " "; /* 1 */
+        display: table; /* 2 */
+    }
+
+    .cf:after {
+        clear: both;
+    }
+
+    /**
+     * For IE 6/7 only
+     * Include this rule to trigger hasLayout and contain floats.
+     */
+    .cf {
+        *zoom: 1;
+    }
+
   </style>
 </head>
 
@@ -252,6 +280,11 @@
       <a href="http://twitter.com/stemount" target="_blank">@stemount on Twitter</a>
     </p>
 
+  </section>
+
+  <section class="yrs cf">
+    <p>Ambassador/ huge supporter of…</p>
+    <a href="http://festival.yrs.io"><img src="./yrslogo--festival.png" /></a>
   </section>
 
   <footer>
