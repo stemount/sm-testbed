@@ -8,7 +8,7 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <title>Stephen Mount - London-based Creative Technologist</title>
+  <title>Stephen Mount - Creative Technologist in London.</title>
 
   <meta name="description" content="tech consultant based in London" />
 
@@ -45,6 +45,7 @@
       width: 100px;
       float: left;
       margin: 0 20px 20px 0;
+      border: 2px solid #DD4D4E;
     }
 
     .me img.header_photo {
@@ -74,7 +75,7 @@
 
     a:link,
     a:visited {
-      color: #0088EE;
+      color: #DD4D4E;
       font-weight: normal;
     }
 
@@ -140,6 +141,16 @@
       width: 650px;
     }
 
+    section.yrs {
+      margin: 0 0 30px 0;
+    }
+
+    section.yrs img {
+      width: 50%;
+      float: left;
+      margin: 0 20px 0 0;
+    }
+
     @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
 
       body {
@@ -151,8 +162,7 @@
       }
 
       header h1 span {
-        border-bottom: 3px solid #DDD;
-        text-indent: -9999px;
+        display: none;
       }
 
       header h1 a {
@@ -207,16 +217,16 @@
         margin: 20px 0 0 0;
       }
 
-    }
+      section.yrs {
+        margin: 0 0 30px 0;
+      }
 
-    section.yrs {
-      margin: 0 0 30px 0;
-    }
+      section.yrs img {
+        width: 100%;
+        float: none;
+        margin: 0;
+      }
 
-    section.yrs img {
-      width: 100%;
-      float: left;
-      margin: 0 20px 0 0;
     }
 
     .cf:before,
@@ -246,7 +256,7 @@
 
   <header>
     <!-- who am I? -->
-    <h1>Hello, I'm Stephen Mount</h1>
+    <h1><span>Hello, I'm</span> Stephen Mount</h1>
     <h2>creative technologist at <a href="http://dolphintechnology.co.uk">dolphin technology ltd.</a></h2>
   </header>
 
@@ -284,7 +294,7 @@
   </section>
 
   <section class="yrs cf">
-    <p>Ambassador/ huge supporter of…</p>
+    <p>Ambassador of <a href="http://festival.yrs.io">Festival of Code 2015</a></p>
     <a href="http://festival.yrs.io"><img src="./yrslogo--festival.png" alt="Young Rewired State Festival of Code" /></a>
   </section>
 
@@ -295,7 +305,8 @@
       <li>OOP PHP</li>
       <li>Software Engineer</li>
       <li>JavaScript Developer</li>
-      <li>Drupal Developer</li>
+      <li>Drupal Fan</li>
+      <li>Creative Technologist</li>
     </ul>
   </footer>
 
