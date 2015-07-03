@@ -37,7 +37,7 @@
     }
 
     .content {
-      line-height: 26px;
+      line-height: 29px;
     }
 
     .me img.photo {
@@ -45,7 +45,7 @@
       width: 100px;
       float: left;
       margin: 0 20px 20px 0;
-      border: 2px solid #DD4D4E;
+      border: 6px solid #DD4D4E;
     }
 
     .me img.header_photo {
@@ -161,7 +161,16 @@
         width: auto;
       }
 
-      header h1 span {
+      header h1 span,
+      header h2 span {
+        display: none;
+      }
+
+      header h2 {
+        color: #AAA;
+      }
+
+      header h2 a {
         display: none;
       }
 
@@ -179,7 +188,7 @@
       }
 
       .me {
-        height: 150px;
+        height: 250px;
         overflow: hidden;
         margin: 40px -40px 40px -40px;
         background-image: url("./smheaderpicture.jpg");
@@ -200,6 +209,7 @@
 
       ul.tags li {
         font-weight: normal;
+        width: 90%;
       }
 
       .external_links a {
@@ -225,6 +235,10 @@
         width: 100%;
         float: none;
         margin: 0;
+      }
+
+      section.yrs a {
+        display: block;
       }
 
     }
@@ -257,7 +271,7 @@
   <header>
     <!-- who am I? -->
     <h1><span>Hello, I'm</span> Stephen Mount</h1>
-    <h2>creative technologist at <a href="http://dolphintechnology.co.uk">dolphin technology ltd.</a></h2>
+    <h2>creative technologist<span> at </span><a href="http://dolphintechnology.co.uk">dolphin technology ltd.</a></h2>
   </header>
 
   <!-- I'm 170cm so let's hide in a car! -->
