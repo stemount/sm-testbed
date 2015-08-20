@@ -21,9 +21,20 @@
     @import url("http://fonts.googleapis.com/css?family=Oxygen:400,700,300");
 
     body {
-      background: #222;
+      background: url("./gps.jpg") #000 no-repeat top left;
+      background-size: cover;
       margin: 40px;
       color: #FFF;
+    }
+
+    .bg--overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.8);
+      z-index: -1;
     }
 
     html {
@@ -84,14 +95,16 @@
     }
 
     .external_links {
-      font-size: 0.8em;
-      text-transform: uppercase;
-      margin: 0 0 25px 0;
+      /*font-size: 0.8em;*/
+      /*color:;*/
+      /*text-transform: uppercase;*/
+      margin: 20px 0 25px 0;
+      font-size: 0.9em;
     }
 
     .external_links a {
       margin: 0 20px 0 0;
-      color: #AAA;
+      color: #FFF;
       font-weight: bold;
     }
 
@@ -125,12 +138,12 @@
     ul.tags li {
       display: inline-block;
       margin: 0 5px 10px 0;
-      background: #444;
+      background: #DD4D4E;
       padding: 5px 10px;
       border-radius: 5px;
-      font-size: 10px;
+      font-size: 0.7em;
       font-weight: bold;
-      text-transform: uppercase;
+      /*text-transform: uppercase;*/
     }
 
     h2 a:link {
@@ -139,6 +152,8 @@
 
     #page {
       width: 650px;
+      z-index: 999;
+      text-shadow: 1px 1px 1px #000;
     }
 
     section.yrs {
@@ -154,11 +169,13 @@
     @media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
 
       body {
-        margin: 40px 40px 40px 40px;
+        margin: 40px 40px 40px 30px;
+        background: #BBB;
       }
 
       #page {
         width: auto;
+        text-shadow: none;
       }
 
       header h1 span,
@@ -207,6 +224,12 @@
         margin: 0 0 20px 0;
       }
 
+      ul.tags {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+      }
+
       ul.tags li {
         font-weight: normal;
         width: 90%;
@@ -228,6 +251,7 @@
       }
 
       section.yrs {
+        display: none;
         margin: 0 0 30px 0;
       }
 
@@ -239,6 +263,19 @@
 
       section.yrs a {
         display: block;
+      }
+
+      .tags {
+        font-size: 1.2em;
+      }
+
+      .external_links a {
+        display: block;
+        text-align: center;
+        color: #FFF;
+        padding: 7px 5px;
+        width: 100%;
+        margin: 0 0 10px 0;
       }
 
     }
@@ -266,12 +303,14 @@
 
 <body>
 
+<div class="bg--overlay"></div>
+
 <div id="page">
 
   <header>
     <!-- who am I? -->
     <h1><span>Hello, I'm</span> Stephen Mount</h1>
-    <h2>creative technologist<span> at </span><a href="http://dolphintechnology.co.uk">dolphin technology ltd.</a></h2>
+    <h2>freelance javascript developer<span> based in Central London</span></h2>
   </header>
 
   <!-- I'm 170cm so let's hide in a car! -->
@@ -285,17 +324,42 @@
 
     <!-- Commercial Projects -->
     <p class="projects">Teams I've worked with&hellip;
-      <a href="http://universalchannel.co.uk" target="_blank">Universal Channel</a>
-      <a href="http://huntress.co.uk" target="_blank">Huntress Group</a>
-      <a href="http://eurostar.com" target="_blank">Eurostar.com</a>
+      <a href="http://bbcgoodfood.com" target="_blank">BBC Good Food</a>
+      <a href="http://catchdigital.com" target="_blank">Catch Digital</a>
       <a href="http://cqc.org.uk" target="_blank">Care Quality Commission</a>
-      <a href="http://sportrelief.com" target="_blank">Comic/Sport Relief</a>
+      <a href="http://eurostar.com" target="_blank">Eurostar.com</a>
+      <a href="http://fourcommunications.com/" target="_blank">Four Communications</a>
+      <a href="http://huntress.co.uk" target="_blank">Huntress Group</a>
+      <a href="http://naace.co.uk" target="_blank">Naace</a>
       <a href="http://practicalcaravan.com" target="_blank">Practical Caravan</a>
-      <a href="http://naace.co.uk">Naace</a> <a href="http://rackspace.co.uk">Rackspace</a>
-      <a href="http://viviennewestwood.com">Vivienne Westwood</a>
-      <a href="http://bbcgoodfood.com">BBC Good Food</a>
+      <a href="http://rackspace.co.uk" target="_blank">Rackspace</a>
+      <a href="http://sportrelief.com" target="_blank">Comic/Sport Relief</a>
+      <a href="http://steerdaviesgleave.com/" target="_blank">Steer Davies Gleave</a>
       <a href="http://topgear.com">BBC TopGear</a>
+      <a href="http://universalchannel.co.uk" target="_blank">Universal Channel</a>
+      <a href="http://viviennewestwood.com" target="_blank">Vivienne Westwood</a>
     </p>
+
+  </section>
+
+  <section class="yrs cf">
+    <p>Huge supporter of the <a href="http://festival.yrs.io" target="_blank">Festival of Code</a></p>
+    <a href="http://festival.yrs.io" target="_blank"><img src="./yrslogo--festival.png" alt="Young Rewired State Festival of Code" /></a>
+  </section>
+
+  <footer>
+    <!-- Things that describe what I use and like. -->
+    <p>I've recently used these for project work…</p>
+    <ul class="tags">
+      <li>OO JS</li>
+      <li>OOP PHP</li>
+      <li>Node.js</li>
+      <li>Angular</li>
+      <li>Drupal</li>
+      <li>PhoneGap</li>
+      <li>Python</li>
+      <li>HTML5/CSS3</li>
+    </ul>
 
     <!-- Links -->
     <p class="external_links">
@@ -303,25 +367,8 @@
       <a href="mailto:sm@57e.uk" class="SteMail">sm@57e.uk</a>
       <a href="http://linkedin.com/in/stemount" target="_blank">LinkedIn</a>
       <a href="http://twitter.com/stemount" target="_blank">@stemount on Twitter</a>
+      <a href="https://www.yunojuno.com/p/stemount">My YunoJuno Profile</a>
     </p>
-
-  </section>
-
-  <section class="yrs cf">
-    <p>Ambassador of <a href="http://festival.yrs.io">Festival of Code 2015</a></p>
-    <a href="http://festival.yrs.io"><img src="./yrslogo--festival.png" alt="Young Rewired State Festival of Code" /></a>
-  </section>
-
-  <footer>
-    <!-- Things that describe what I use and like. -->
-    <ul class="tags">
-      <li>OO JS</li>
-      <li>OOP PHP</li>
-      <li>Software Engineer</li>
-      <li>JavaScript Developer</li>
-      <li>Drupal Fan</li>
-      <li>Creative Technologist</li>
-    </ul>
   </footer>
 
   <script>
