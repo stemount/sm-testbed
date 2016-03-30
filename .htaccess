@@ -1,5 +1,5 @@
-# Force HTTPS.
-RewriteEngine On
-#RewriteCond %{HTTP_HOST} ^ste\.london [NC]
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://ste.london/$1 [R,L]
+# # Force HTTPS.
+# RewriteEngine On
+# #RewriteCond %{HTTP_HOST} ^ste\.london [NC]
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://ste.london/$1 [R,L]
