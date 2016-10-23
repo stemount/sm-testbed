@@ -22,62 +22,8 @@
   <style type="text/css">
 
     body {
-      /*background: url("./gps.jpg") #000 no-repeat top left;*/
-      /*background-size: cover;*/
       margin: 0px;
       color: #333;
-    }
-
-    @font-face {
-        font-family: 'LigatureSymbols';
-        src: url('/fonts/LigatureSymbols-2.11.eot');
-        src: url('/fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
-             url('/fonts/LigatureSymbols-2.11.woff') format('woff'),
-             url('/fonts/LigatureSymbols-2.11.ttf') format('truetype'),
-             url('/fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    .lsf {
-      font-family: 'LigatureSymbols';
-      -webkit-text-rendering: optimizeLegibility;
-      -moz-text-rendering: optimizeLegibility;
-      -ms-text-rendering: optimizeLegibility;
-      -o-text-rendering: optimizeLegibility;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      -ms-font-smoothing: antialiased;
-      -o-font-smoothing: antialiased;
-      font-smoothing: antialiased;
-      -webkit-font-feature-settings: "liga" 1, "dlig" 1;
-      -moz-font-feature-settings: "liga=1, dlig=1";
-      -ms-font-feature-settings: "liga" 1, "dlig" 1;
-      -o-font-feature-settings: "liga" 1, "dlig" 1;
-      font-feature-settings: "liga" 1, "dlig" 1;
-    }
-
-    .lsf-icon:before {
-      content:attr(title);
-      margin-right:0.3em;
-      font-size:130%;
-      font-family: 'LigatureSymbols';
-      -webkit-text-rendering: optimizeLegibility;
-      -moz-text-rendering: optimizeLegibility;
-      -ms-text-rendering: optimizeLegibility;
-      -o-text-rendering: optimizeLegibility;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-      -ms-font-smoothing: antialiased;
-      -o-font-smoothing: antialiased;
-      font-smoothing: antialiased;
-      -webkit-font-feature-settings: "liga" 1, "dlig" 1;
-      -moz-font-feature-settings: "liga=1, dlig=1";
-      -ms-font-feature-settings: "liga" 1, "dlig" 1;
-      -o-font-feature-settings: "liga" 1, "dlig" 1;
-      font-feature-settings: "liga" 1, "dlig" 1;
     }
 
     .bg--overlay {
@@ -110,6 +56,12 @@
       float: left;
       margin: 0 20px 20px -100px;
       border: 5px solid #005F6B;
+      transition: all 0.2s;
+    }
+
+    .me img.photo:hover {
+      transition: all 0.2s;
+      width: 200px;
     }
 
     .me img.header_photo {
@@ -167,16 +119,8 @@
       margin-right: 10px;
     }
 
-    .projects {
-/*      clear: left;
-      -webkit-column-count: 3;
-      -moz-column-count: 3;
-      column-count: 3;*/
-    }
-
     .projects a {
       text-indent: -9999px;
-      /*box-shadow: 1px 1px 1px #FFF;*/
       display: block;
       color: #888;
       background-image: url('./clients.png');
@@ -187,7 +131,6 @@
       float: left;
       margin: 15px 25px 15px 0;
       opacity: 1.0;
-      /*background-size: 400px 200px;*/
     }
 
     .projects a:nth-child(3n) {
@@ -299,9 +242,6 @@
       float: left;
       color: #fff;
       text-decoration: underline;
-    }
-    .yj-freelancerHeader img {
-      /*float: left;*/
     }
     a[href='http://topgear.com'] {
       background-position: top center;
@@ -431,13 +371,6 @@
         line-height: 1.5em;
       }
 
-      .projects {
-        /*clear: left;*/
-        /*-webkit-column-count: 1;*/
-        /*-moz-column-count: 1;*/
-        /*column-count: 1;*/
-      }
-
       .projects a {
         background: none;
         height: auto;
@@ -445,21 +378,6 @@
         text-indent: 0px;
         float: none;
         margin: 0;
-      }
-
-      section.yrs {
-        display: none;
-        margin: 0 0 30px 0;
-      }
-
-      section.yrs img {
-        width: 100%;
-        float: none;
-        margin: 0;
-      }
-
-      section.yrs a {
-        display: block;
       }
 
       .tags {
@@ -568,7 +486,60 @@
   </script>
 
   <style type="text/css">
+    /* fonts */
     @import url("//fonts.googleapis.com/css?family=Oxygen:400,700,300");
+
+    @font-face {
+        font-family: 'LigatureSymbols';
+        src: url('/fonts/LigatureSymbols-2.11.eot');
+        src: url('/fonts/LigatureSymbols-2.11.eot?#iefix') format('embedded-opentype'),
+             url('/fonts/LigatureSymbols-2.11.woff') format('woff'),
+             url('/fonts/LigatureSymbols-2.11.ttf') format('truetype'),
+             url('/fonts/LigatureSymbols-2.11.svg#LigatureSymbols') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    .lsf {
+      font-family: 'LigatureSymbols';
+      -webkit-text-rendering: optimizeLegibility;
+      -moz-text-rendering: optimizeLegibility;
+      -ms-text-rendering: optimizeLegibility;
+      -o-text-rendering: optimizeLegibility;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -ms-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+      -moz-font-feature-settings: "liga=1, dlig=1";
+      -ms-font-feature-settings: "liga" 1, "dlig" 1;
+      -o-font-feature-settings: "liga" 1, "dlig" 1;
+      font-feature-settings: "liga" 1, "dlig" 1;
+    }
+
+    .lsf-icon:before {
+      content:attr(title);
+      margin-right:0.3em;
+      font-size:130%;
+      font-family: 'LigatureSymbols';
+      -webkit-text-rendering: optimizeLegibility;
+      -moz-text-rendering: optimizeLegibility;
+      -ms-text-rendering: optimizeLegibility;
+      -o-text-rendering: optimizeLegibility;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+      -ms-font-smoothing: antialiased;
+      -o-font-smoothing: antialiased;
+      font-smoothing: antialiased;
+      -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+      -moz-font-feature-settings: "liga=1, dlig=1";
+      -ms-font-feature-settings: "liga" 1, "dlig" 1;
+      -o-font-feature-settings: "liga" 1, "dlig" 1;
+      font-feature-settings: "liga" 1, "dlig" 1;
+    }
   </style>
 
 </div>
