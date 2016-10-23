@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "ejs": "^2.5.2",
+    "emoji-favicon": "^0.3.0",
     "express": "^4.14.0",
     "express-minify-html": "^0.6.0",
     "html-minifier": "^3.1.0",
