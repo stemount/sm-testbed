@@ -5,6 +5,8 @@
     "express": "^4.14.0",
     "express-http-proxy": "^0.10.0",
     "express-minify-html": "^0.6.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
     "html-minifier": "^3.1.0",
     "jshtml-express": "0.0.1"
   }
